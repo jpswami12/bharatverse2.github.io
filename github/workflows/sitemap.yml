@@ -1,0 +1,34 @@
+name: Auto Sitemap + Google Index
+on: [push]
+jobs:
+  sitemap:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Generate Sitemap
+      run: |
+        cat > sitemap.xml << EOF
+        <?xml version="1.0" encoding="UTF-8"?>
+        <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+          <url>
+            <loc>https://bharatverse.com</loc>
+            <lastmod>$(date -Iseconds)</lastmod>
+            <priority>1.0</priority>
+          </url>
+          <url>
+            <loc>https://bharatverse.com/articles</loc>
+            <priority>0.8</priority>
+          </url>
+        </urlset>
+        EOF
+        
+    - name: Google Instant Index
+      run: |
+        curl -X POST "https://indexing.googleapis.com/v3/urlNotifications:publish" \
+        -H "Content-Type: application/json" \
+        --data "{\"url\": \"https://bharatverse.com/sitemap.xml\", \"type\": \"URL_UPDATED\"}"
+        
+    - name: Upload Sitemap
+      uses: actions/upload-artifact@v3
+      with:
+        name: bharatverse-sitemap
+        path: sitemap.xml
