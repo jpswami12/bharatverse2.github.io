@@ -2,46 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>https://bharatverse2.com/</loc>
-<priority>1.0</priority>
+  <loc>https://bharatverse2.com/</loc>
 </url>
 
 <url>
-<loc>https://bharatverse2.com/about.html</loc>
-<priority>0.8</priority>
+  <loc>https://bharatverse2.com/about.html</loc>
 </url>
 
 <url>
-<loc>https://bharatverse2.com/founder.html</loc>
-<priority>0.8</priority>
+  <loc>https://bharatverse2.com/founder.html</loc>
 </url>
 
 <url>
-<loc>https://bharatverse2.com/book.html</loc>
-<priority>0.8</priority>
+  <loc>https://bharatverse2.com/book.html</loc>
 </url>
 
-<url>
-  <loc>https://bharatverse2.github.io/</loc>
-</url>
-
-<url>
-  <loc>https://bharatverse2.github.io/author.html</loc>
-</url>
-
-<url>
-  <loc>https://bharatverse2.github.io/book.html</loc>
-</url>
-
-<url>
-  <loc>https://bharatverse2.github.io/research.html</loc>
-</url>
-
-<url>
-  <loc>https://bharatverse2.github.io/timeline.html</loc>
-</url>
-
-<url>
-  <loc>https://bharatverse2.github.io/references.html</loc>
-</url>
 </urlset>
