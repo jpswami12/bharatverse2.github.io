@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="hi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About BharatVerse 2.0 | India's $50 Trillion Economy Vision</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Discover the vision behind BharatVerse 2.0. A strategic roadmap to establish Sanatan as a global science and transform India into a $50 Trillion economy.">
+    <meta name="keywords" content="BharatVerse 2.0 Vision, India 50 Trillion Economy, Sanatan Science, Digital Sovereignty, Jeevan Prasad Vision, Atmanirbhar Bharat Roadmap">
+    <meta name="author" content="Jeevan Prasad">
+    <link rel="canonical" href="https://www.bharatverse2.com/about.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.bharatverse2.com/about.html">
+    <meta property="og:title" content="About BharatVerse 2.0 - The Vision">
+    <meta property="og:description" content="Establishing Sanatan as a Universal Science. The blueprint for India's digital and economic dominance.">
+    <meta property="og:image" content="https://bharatverse2.com/images/vision-og.jpg">
+
+    <!-- Schema Markup (AboutPage) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "mainEntity": {
+        "@type": "Organization",
+        "name": "BharatVerse 2.0",
+        "founder": "Jeevan Prasad",
+        "description": "A movement to integrate Sanatan Science with Digital Architecture for India's economic rise.",
+        "url": "https://www.bharatverse2.com"
+      }
+    }
+    </script>
+
+    <!-- Tailwind & Dependencies -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300;400;600;700;800&family=Teko:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Shared Styles (Same as Index) -->
+    <style>
+        body { font-family: 'Noto Sans Devanagari', sans-serif; background-color: #020205; color: #f8fafc; overflow-x: hidden; }
+        .glass-nav { background: rgba(10, 10, 42, 0.9); backdrop-filter: blur(16px); border-bottom: 1px solid rgba(255, 153, 51, 0.1); }
+        .glass-card { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.05); }
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #020205; }
+        ::-webkit-scrollbar-thumb { background: #FF9933; border-radius: 4px; }
+        
+        /* Floating Icons Animation */
+        .bg-animated { position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1; background: radial-gradient(circle at 50% 50%, #1a1a3a 0%, #020205 70%); }
+        .floating-icon { position: absolute; color: rgba(255, 153, 51, 0.05); animation: float 10s ease-in-out infinite; }
+        @keyframes float { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-20px); } }
+        .s-1 { top: 10%; left: 10%; font-size: 4rem; } .s-2 { bottom: 15%; right: 20%; font-size: 6rem; }
+    </style>
+</head>
+<body>
+    <div class="bg-animated"><i class="fa-solid fa-om floating-icon s-1"></i><i class="fa-solid fa-globe floating-icon s-2"></i></div>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState } = React;
+
+        const Navbar = () => (
+            <nav className="fixed w-full z-50 glass-nav">
+                <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+                    <a href="index.html" className="text-2xl font-bold font-heading tracking-wide text-white">BHARAT<span className="text-[#FF9933]">VERSE</span> 2.0</a>
+                    <div className="hidden md:flex gap-8 items-center font-medium text-sm">
+                        <a href="index.html" className="hover:text-[#FF9933] transition">Home</a>
+                        <a href="about.html" className="text-[#FF9933] font-bold">About Vision</a>
+                        <a href="founder.html" className="hover:text-[#FF9933] transition">Founder</a>
+                        <a href="book.html" className="hover:text-[#FF9933] transition">The Book</a>
+                    </div>
+                </div>
+            </nav>
+        );
+
+        const AboutHero = () => (
+            <section className="pt-40 pb-20 px-4 text-center">
+                <h1 className="text-5xl md:text-7xl font-bold font-heading text-white mb-6">THE VISION: <span className="text-[#FF9933]">SANATAN SCIENCE</span></h1>
+                <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                    "सनातन एक धर्म नहीं, एक विज्ञान है। हमारा मिशन इसे वैश्विक पटल पर एक यूनिवर्सल साइंस के रूप में स्थापित करना है।"
+                </p>
+            </section>
+        );
+
+        const Mission = () => (
+            <section className="py-16 px-4 container mx-auto">
+                <div className="grid md:grid-cols-2 gap-12 items-center">
+                    <div className="glass-card p-8 rounded-2xl border-l-4 border-[#FF9933]">
+                        <h2 className="text-3xl font-bold mb-4">Why $50 Trillion?</h2>
+                        <p className="text-gray-300 mb-4">
+                            India's potential is suppressed by outdated systems and digital slavery. BharatVerse 2.0 proposes a complete overhaul:
+                        </p>
+                        <ul className="space-y-3 text-gray-400">
+                            <li><i className="fa-solid fa-check text-green-500 mr-2"></i> <strong>Digital Sovereignty:</strong> Own OS, Own Cloud.</li>
+                            <li><i className="fa-solid fa-check text-green-500 mr-2"></i> <strong>Sanatan Economics:</strong> Wealth with Dharma.</li>
+                            <li><i className="fa-solid fa-check text-green-500 mr-2"></i> <strong>Rural Tech Grids:</strong> Villages as GDP engines.</li>
+                        </ul>
+                    </div>
+                    <div className="glass-card p-8 rounded-2xl border-l-4 border-green-600">
+                        <h2 className="text-3xl font-bold mb-4">System Change</h2>
+                        <p className="text-gray-300">
+                            We are not just writing a book; we are architecting a new operating system for the nation. From <strong>Blockchain Governance</strong> to <strong>Vedic AI</strong>, we bridge the gap between ancient wisdom and quantum future.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        );
+
+        const Footer = () => (
+            <footer className="bg-black border-t border-gray-800 pt-12 pb-6 mt-20 text-center">
+                <p className="text-gray-600 text-sm">© 2026 BharatVerse 2.0 | Jeevan Prasad</p>
+            </footer>
+        );
+
+        const App = () => (
+            <div className="min-h-screen flex flex-col">
+                <Navbar />
+                <main className="flex-grow">
+                    <AboutHero />
+                    <Mission />
+                </main>
+                <Footer />
+            </div>
+        );
+
+        ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+    </script>
+</body>
+</html>
