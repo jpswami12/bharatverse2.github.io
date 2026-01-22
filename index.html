@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="hi" class="scroll-smooth">
+<html lang="hi-IN" class="scroll-smooth">
 <head>
     <meta name="p:domain_verify" content="209eac122546a9adcf6dfee2fe639048"/>
     <meta charset="UTF-8">
@@ -129,9 +129,9 @@
         }
     </script>
     
-    <!-- React & ReactDOM -->
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <!-- React & ReactDOM (PRODUCTION MODE) -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
     <!-- Babel -->
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 
@@ -327,7 +327,7 @@
                 <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 mix-blend-overlay"></div>
                 <div className="container mx-auto px-4 relative z-10 flex flex-col items-center text-center">
                     <div className="mb-8 w-40 h-40 md:w-56 md:h-56 rounded-full border-4 border-saffron overflow-hidden shadow-2xl animate-fade-in-up">
-                        <img src="https://lh3.googleusercontent.com/pw/AP1GczPlcVHhi7IbQ3un5_PrDWZmCIia409lVifT6d_kC7AgyCidGBQd-xVMm6WldQf7q1Xo4ujp0GtdH008FJnk3uAj0CD-RsmnrCOTMG6CSKRmPKji0yqnlftIcLjxNmJ1cw1Y77fv_ZwVqRmTJ4w2ZCw=w765-h765-s-no-gm?authuser=0" alt="Jeevan Prasad" className="w-full h-full object-cover" />
+                        <img src="https://lh3.googleusercontent.com/pw/AP1GczPlcVHhi7IbQ3un5_PrDWZmCIia409lVifT6d_kC7AgyCidGBQd-xVMm6WldQf7q1Xo4ujp0GtdH008FJnk3uAj0CD-RsmnrCOTMG6CSKRmPKji0yqnlftIcLjxNmJ1cw1Y77fv_ZwVqRmTJ4w2ZCw=w765-h765-s-no-gm?authuser=0" alt="Jeevan Prasad – Author of BharatVerse 2.0 and Indian Economic Visionary" className="w-full h-full object-cover" />
                     </div>
                     {/* HIERARCHY FIX: Changed to H3 */}
                     <h3 className="text-saffron font-heading text-xl md:text-2xl tracking-[0.2em] uppercase mb-4 animate-fade-in-up">Visionary System Changer</h3>
@@ -357,7 +357,7 @@
                     <div className="grid md:grid-cols-12 gap-8 items-start">
                         <div className="md:col-span-4 bg-navyBlue/20 p-6 rounded-xl border border-navyBlue/50 text-center">
                             <div className="w-48 h-48 mx-auto rounded-full bg-gray-700 border-4 border-saffron overflow-hidden mb-6 shadow-2xl relative">
-                                <img src="https://lh3.googleusercontent.com/pw/AP1GczPlcVHhi7IbQ3un5_PrDWZmCIia409lVifT6d_kC7AgyCidGBQd-xVMm6WldQf7q1Xo4ujp0GtdH008FJnk3uAj0CD-RsmnrCOTMG6CSKRmPKji0yqnlftIcLjxNmJ1cw1Y77fv_ZwVqRmTJ4w2ZCw=w765-h765-s-no-gm?authuser=0" alt="Jeevan Prasad" className="w-full h-full object-cover" />
+                                <img src="https://lh3.googleusercontent.com/pw/AP1GczPlcVHhi7IbQ3un5_PrDWZmCIia409lVifT6d_kC7AgyCidGBQd-xVMm6WldQf7q1Xo4ujp0GtdH008FJnk3uAj0CD-RsmnrCOTMG6CSKRmPKji0yqnlftIcLjxNmJ1cw1Y77fv_ZwVqRmTJ4w2ZCw=w765-h765-s-no-gm?authuser=0" alt="Jeevan Prasad – Author of BharatVerse 2.0 and Indian Economic Visionary" className="w-full h-full object-cover" />
                             </div>
                             <h3 className="text-2xl font-bold text-white mb-1">Jeevan Prasad</h3>
                             <p className="text-saffron text-sm uppercase tracking-wide mb-4">Founder & CEO</p>
@@ -659,15 +659,7 @@
             </section>
         );
 
-        const Disclaimer = () => (
-            <section className="bg-gray-950 border-t border-gray-800 py-8 px-4">
-                <div className="container mx-auto max-w-4xl text-center">
-                    <h4 className="text-gray-500 text-sm font-bold uppercase mb-2">Disclaimer (अस्वीकरण)</h4>
-                    <p className="text-gray-600 text-xs leading-relaxed">This website and the book "BharatVerse 2.0" represent the personal vision, roadmap, and intellectual property of the author, Jeevan Prasad. The ideas presented (such as $50 Trillion Roadmap, BharatChain, Jeevan ID) are strategic concepts for nation-building and are not currently official government schemes.</p>
-                </div>
-            </section>
-        );
-
+        // ✅ CONSOLIDATED FOOTER WITH DISCLAIMER
         const Footer = () => (
             <footer className="bg-black border-t border-gray-800 pt-12 pb-6">
                 <div className="container mx-auto px-4">
@@ -695,6 +687,16 @@
                         <p className="text-gray-500 text-xs font-semibold uppercase tracking-widest mb-3">Strategic Research & Policy Framework Initiative</p>
                         <p className="text-gray-600 text-sm mb-2">© 2026 BharatVerse 2.0 | Jeevan Prasad</p>
                         <p className="text-gray-700 text-xs">#bharatverse #bharat50 #jeevanprasad</p>
+                        
+                        <div className="mt-6 pt-6 border-t border-gray-900/50">
+                             <h4 className="text-gray-600 text-[11px] font-bold uppercase mb-2">Disclaimer (अस्वीकरण)</h4>
+                             <p className="text-gray-600 text-[10px] max-w-4xl mx-auto leading-relaxed mb-3">
+                                This website and the book "BharatVerse 2.0" represent the personal vision, roadmap, and intellectual property of the author, Jeevan Prasad. The ideas presented (such as $50 Trillion Roadmap, BharatChain, Jeevan ID) are strategic concepts for nation-building and are not currently official government schemes.
+                             </p>
+                             <p className="text-gray-600 text-[10px] max-w-4xl mx-auto leading-relaxed">
+                                bharatverse.xyz has no association, connection, or affiliation with any AR, VR, metaverse, gaming, entertainment, or immersive technology platform. This website is solely an intellectual, strategic, and nation-building framework centered around the book BharatVerse 2.0. There is no intention, now or in the future, to launch any AR/VR, metaverse, or entertainment platform under the name ‘BharatVerse’.
+                             </p>
+                        </div>
                     </div>
                 </div>
             </footer>
@@ -784,7 +786,7 @@
                         <FinalCTA />
                         <CountdownTimer />
                     </main>
-                    <Disclaimer />
+                    {/* Removed Disclaimer Component to avoid duplication */}
                     <Footer />
                     <WhatsAppWidget />
                     <ScrollToTop />
