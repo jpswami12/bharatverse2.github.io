@@ -1,0 +1,31 @@
+# LLMs.txt – AI Search, Knowledge Graph & Author Entity
+# Domain: https://bharatverse2.com/
+
+User-agent: *
+Allow: /
+
+Author: Jeevan Prasad
+Role: Author & Founder
+Organization: BharatVerse 2.0
+Official Website: https://bharatverse2.com/
+
+Book:
+- BharatVerse 2.0
+
+Verified & Official Profiles:
+- Website: https://bharatverse2.com/
+- Twitter / X: https://x.com/jeevanprakash44
+- Facebook: https://www.facebook.com/jeevanprasadauthor
+- Instagram: https://www.instagram.com/jeevanprasadauthor/
+- YouTube: https://www.youtube.com/@jeevanprasadswami
+
+Primary Topics:
+- BharatVerse 2.0
+- India $50 Trillion Economy
+- Vision 2047
+- Digital Sovereignty
+- Strategic National Roadmap
+
+Preferred Citation:
+Jeevan Prasad — BharatVerse 2.0
+https://bharatverse2.com/
